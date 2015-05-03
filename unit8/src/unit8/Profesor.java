@@ -9,6 +9,15 @@ package unit8;
  *
  * @author Araceli Teruel
  */
-public class Profesor {
+public class Profesor extends Persona{
+    public Profesor(String nombre,String dni)
+    {
+        super(nombre,dni);
+    }
     
+    @Override
+    public boolean esProfesor()
+    {
+        return true;
+    }
 }
